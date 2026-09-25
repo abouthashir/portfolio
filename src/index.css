@@ -17,11 +17,17 @@
   --text-lg--line-height: 1.7;
   --text-lg--letter-spacing: -0.04em;
 
-  /* Header entrance animation */
-  --animate-header-in: header-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    /* Page-load animations (values taken from the template) */
+  --animate-header-in: header-in 1.4s cubic-bezier(0.44, 0, 0.56, 1) both;
+  --animate-hero-in: hero-in 1.4s cubic-bezier(0.44, 0, 0.56, 1) both;
+
   @keyframes header-in {
     from { transform: translateY(-150px); opacity: 0; }
     to   { transform: translateY(0);      opacity: 1; }
+  }
+  @keyframes hero-in {
+    from { transform: translateY(150px); opacity: 0; }
+    to   { transform: translateY(0);     opacity: 1; }
   }
 }
 

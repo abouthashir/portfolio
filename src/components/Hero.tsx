@@ -22,7 +22,7 @@ type HeroProps = {
 
 function Hero({ name, intro }: HeroProps) {
     return (
-        <section className="flex flex-col items-center gap-8 pt-24 text-center">
+        <section className="flex animate-hero-in flex-col items-center gap-8 pt-24 text-center motion-reduce:animate-none">
             <h1 className="text-[76px] leading-[1.1] font-bold tracking-[-0.04em] md:text-[124px] md:leading-none">
                 {name}
             </h1>
