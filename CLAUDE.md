@@ -23,8 +23,17 @@ Recruiters and hiring managers for frontend / React developer roles.
 
 ## Tech stack
 - Vite + React + TypeScript
-- Plain CSS (no framework), with CSS variables for theming
+- Tailwind CSS v4 through `@tailwindcss/vite` (no tailwind.config.js). Design tokens go in an `@theme` block in `src/index.css`. When reviewing, explain the CSS behind each utility class, because the owner is learning CSS through Tailwind.
 - npm
+
+## Design reference
+The hero layout is modeled on https://simfolio.framer.website (a Framer template). Use it as layout inspiration only, with the owner's own photo and text.
+- **Style:** monochrome, with no accent color.
+- **Colors:** background #F5F5F5, text #000000, muted text #525252, button surface #FFFFFF.
+- **Font:** Geist (400/500/700).
+- **h1:** 124px bold, tracking -0.04em on desktop; 76px with line-height 1.1 on phone.
+- **Layout:** hero is a centered column with 32px gaps, and a 256px photo with 8px radius.
+- **Page gutters:** 16px phone, 64px tablet, 196px desktop.
 
 ## Constraints
 - Stay beginner-friendly: basic TypeScript types only until the fundamentals are solid.
