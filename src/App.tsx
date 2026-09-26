@@ -4,6 +4,7 @@ import About from "./components/About"
 import Reveal from "./components/Reveal"
 import Skills from "./components/Skills"
 import Projects from "./components/Projects"
+import Contact from "./components/Contact"
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
         <hr className="border-border" />
         <Reveal>
           <Projects />
+        </Reveal>
+        <hr className="border-border" />
+        <Reveal>
+          <Contact />
         </Reveal>
         <hr className="border-border" />
       </main>
