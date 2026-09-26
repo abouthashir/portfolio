@@ -1,16 +1,21 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
+import About from "./components/About"
+import Reveal from "./components/Reveal"
 
 function App() {
   return (
-    <div className="mx-auto max-w-290 px-4 md:px-16">
+    <div className="mx-auto max-w-290 px-4 pb-16 md:px-16">
       <Header name="Hashir A" />
-      <main>
+      <main className="flex flex-col gap-24">
         <Hero
           name="Hashir A"
           intro="Full-Stack Developer focused on building reliable applications, scalable architectures, and high-performance digital solutions."
         />
-
+        <Reveal>
+          <About />
+        </Reveal>
+        <hr className="border-border" />
       </main>
     </div>
   )

@@ -11,7 +11,7 @@ type SocialLink = {
 const socialLinks: SocialLink[] = [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/about-hashir', icon: FaLinkedin },
     { label: 'Instagram', href: 'https://www.instagram.com/YOUR-USERNAME', icon: FaSquareInstagram },
-    { label: 'Github', href: 'https://github.com/YOUR-USERNAME', icon: FaGithub },
+    { label: 'Github', href: 'https://github.com/abouthashir', icon: FaGithub },
     { label: 'X', href: 'https://x.com/YOUR-USERNAME', icon: FaXTwitter },
 ]
 
@@ -22,7 +22,7 @@ type HeroProps = {
 
 function Hero({ name, intro }: HeroProps) {
     return (
-        <section className="flex animate-hero-in flex-col items-center gap-8 pt-24 text-center motion-reduce:animate-none">
+        <section className="flex animate-reveal flex-col items-center gap-8 pt-24 text-center motion-reduce:animate-none">
             <h1 className="text-[76px] leading-[1.1] font-bold tracking-[-0.04em] md:text-[124px] md:leading-none">
                 {name}
             </h1>

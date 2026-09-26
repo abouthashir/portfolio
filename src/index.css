@@ -19,13 +19,13 @@
 
     /* Page-load animations (values taken from the template) */
   --animate-header-in: header-in 1.4s cubic-bezier(0.44, 0, 0.56, 1) both;
-  --animate-hero-in: hero-in 1.4s cubic-bezier(0.44, 0, 0.56, 1) both;
+ --animate-reveal: reveal 1.4s cubic-bezier(0.44, 0, 0.56, 1) both;
 
   @keyframes header-in {
     from { transform: translateY(-150px); opacity: 0; }
     to   { transform: translateY(0);      opacity: 1; }
   }
-  @keyframes hero-in {
+  @keyframes reveal {
     from { transform: translateY(150px); opacity: 0; }
     to   { transform: translateY(0);     opacity: 1; }
   }
