@@ -2,6 +2,7 @@ import Header from "./components/Header"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Reveal from "./components/Reveal"
+import Skills from "./components/Skills"
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
         />
         <Reveal>
           <About />
+        </Reveal>
+        <hr className="border-border" />
+        <Reveal>
+          <Skills />
         </Reveal>
         <hr className="border-border" />
       </main>
