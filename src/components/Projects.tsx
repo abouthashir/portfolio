@@ -1,20 +1,24 @@
 type Project = {
     title: string
     description: string
+    techUsed: string
 }
 
 const projects: Project[] = [
     {
         title: 'ROUTEMATE — Ride-Hailing & Carpooling Platform',
-        description: 'C# · ASP.NET Core · SQL Server · EF Core · React | Built a 40+ endpoint ASP.NET Core API with JWT role-based authentication, smart ride matching, driver onboarding, surge pricing, eco-analytics, and real-time ride tracking using React, Tailwind CSS & Leaflet.',
+        description: 'Built a 40+ endpoint ASP.NET Core API with JWT role-based authentication, smart ride matching, driver onboarding, surge pricing, eco-analytics, and real-time ride tracking using React, Tailwind CSS & Leaflet.',
+        techUsed: 'C# · ASP.NET Core · SQL Server · EF Core · React',
     },
     {
         title: 'LIVESTREAM STUDIO — Dual-Stream Live Video App',
-        description: 'C# · ASP.NET Core · SignalR · WebRTC · React (Vite) | Build a real-time dual-stream broadcasting system for webcam and screen sharing using WebRTC, SignalR signaling, and React, with timestamp overlays, host controls, multi-viewer support, and custom offer/answer & ICE exchange.',
+        description: 'Build a real-time dual-stream broadcasting system for webcam and screen sharing using WebRTC, SignalR signaling, and React, with timestamp overlays, host controls, multi-viewer support, and custom offer/answer & ICE exchange.',
+        techUsed: 'C# · ASP.NET Core · SignalR · WebRTC · React (Vite)',
     },
     {
         title: 'ZOOTRIC STAY — Luxury Resort Booking Platform',
-        description: 'Next.js · React 19 · Supabase · GSAP · Tailwind CSS | Developed a luxury resort booking platform with cinematic GSAP animations, real-time Supabase booking, role-based admin dashboard, and KPI analytics.',
+        description: 'Developed a luxury resort booking platform with cinematic GSAP animations, real-time Supabase booking, role-based admin dashboard, and KPI analytics.',
+        techUsed: 'Next.js · React 19 · Supabase · GSAP · Tailwind CSS',
     },
 ]
 
@@ -28,6 +32,7 @@ function Projects() {
                     <article key={project.title} className="flex flex-col gap-2">
                         <h3 className="text-base text-title md:text-justify">{project.title}</h3>
                         <p className="text-sm text-muted md:text-justify">{project.description}</p>
+                        <p className="text-sm text-muted md:text-justify">Tech Used: {project.techUsed}</p>
                     </article>
                 ))}
             </div>
