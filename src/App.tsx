@@ -5,6 +5,7 @@ import Reveal from "./components/Reveal"
 import Skills from "./components/Skills"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
         </Reveal>
         <hr className="border-border" />
       </main>
+      <Reveal>
+        <Footer name="Hashir A" email="abouthashir@gmail.com" />
+      </Reveal>
     </div>
   )
 }
