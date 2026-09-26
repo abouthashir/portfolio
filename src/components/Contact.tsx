@@ -5,7 +5,7 @@ type ContactItem = {
 }
 
 const contactItems: ContactItem[] = [
-    { label: 'Email', value: 'abouthashir@gmail.com', href: 'abouthashir@gmail.com' },
+    { label: 'Email', value: 'abouthashir@gmail.com', href: 'mailto:abouthashir@gmail.com' },
     { label: 'Location', value: 'Vythiri, Wayanad, Kerala, India' },
 ]
 
