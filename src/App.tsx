@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import About from "./components/About"
 import Reveal from "./components/Reveal"
 import Skills from "./components/Skills"
+import Projects from "./components/Projects"
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
         <hr className="border-border" />
         <Reveal>
           <Skills />
+        </Reveal>
+        <hr className="border-border" />
+        <Reveal>
+          <Projects />
         </Reveal>
         <hr className="border-border" />
       </main>

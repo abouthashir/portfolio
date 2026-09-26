@@ -10,11 +10,10 @@ type SocialLink = {
 
 const socialLinks: SocialLink[] = [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/about-hashir', icon: FaLinkedin },
-    { label: 'Instagram', href: 'https://www.instagram.com/YOUR-USERNAME', icon: FaSquareInstagram },
+    { label: 'Instagram', href: 'https://www.instagram.com/hashir.co?stkn=dHZvODZoc2hyZTVk', icon: FaSquareInstagram },
     { label: 'Github', href: 'https://github.com/abouthashir', icon: FaGithub },
     { label: 'X', href: 'https://x.com/YOUR-USERNAME', icon: FaXTwitter },
 ]
-
 type HeroProps = {
     name: string
     intro: string

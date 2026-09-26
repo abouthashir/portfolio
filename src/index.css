@@ -7,6 +7,7 @@
   --color-surface: #ffffff;
   --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
   --color-border: #d4d4d4;
+  --color-title: #0a0a0a;
 
   /* Match the template's breakpoint (phone below 810px) */
   --breakpoint-md: 810px;
