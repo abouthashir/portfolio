@@ -7,7 +7,7 @@ const skillGroups: SkillGroup[] = [
     { title: 'Frontend', skills: ['React', 'TypeScript', 'JavaScript', 'HTML & CSS', 'Tailwind CSS'] },
     { title: 'Backend', skills: ['C#', 'ASP.NET Core', 'REST APIs'] },
     { title: 'Database', skills: ['SQL Server'] },
-    { title: 'Tools', skills: ['Git', 'GitHub', 'VS Code'] },
+    { title: 'Tools', skills: ['Git', 'GitHub', 'VS Code', 'Postman'] },
 ]
 
 function Skills() {
