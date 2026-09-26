@@ -26,8 +26,8 @@ function Projects() {
             <div className="flex flex-col gap-6 md:w-3/5">
                 {projects.map((project) => (
                     <article key={project.title} className="flex flex-col gap-2">
-                        <h3 className="text-base text-justify text-title">{project.title}</h3>
-                        <p className="text-sm text-justify text-muted">{project.description}</p>
+                        <h3 className="text-base text-title md:text-justify">{project.title}</h3>
+                        <p className="text-sm text-muted md:text-justify">{project.description}</p>
                     </article>
                 ))}
             </div>
