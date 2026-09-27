@@ -1,75 +1,80 @@
-# React + TypeScript + Vite
+# Hashir A — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website, built from scratch with React, TypeScript and Tailwind CSS.
 
-Currently, two official plugins are available:
+**🔗 Live site:** 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## About this project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I built this portfolio to showcase my work as a full-stack developer and to deepen my frontend skills. Every component was written by hand. No page builders or UI kits were used.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Fully responsive**: tuned layouts for phone, tablet and desktop, with custom breakpoints at 810px and 1200px
+- **Scroll-reveal animations**: sections slide up and fade in as they enter the screen, built with `IntersectionObserver`
+- **Page-load animations**: the header and hero animate in on first load
+- **Progressive bottom blur**: an 8-layer `backdrop-filter` effect that gradually blurs content at the bottom of the screen
+- **Accessible**: semantic HTML (`header`, `main`, `section`, `article`, `footer`, `dl`), a logical heading order, alt text, `aria-label`s on icon links, visible keyboard focus, and support for the "reduce motion" setting
+- **Data-driven sections**: skills, projects, work history and social links are rendered from typed arrays with `.map()`
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Built with
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| Technology | Purpose |
+|---|---|
+| [React 19](https://react.dev) | UI components |
+| [TypeScript](https://www.typescriptlang.org) | Type safety |
+| [Tailwind CSS v4](https://tailwindcss.com) | Styling and design tokens |
+| [Vite](https://vite.dev) | Development server and production build |
+| [React Icons](https://react-icons.github.io/react-icons) | Social media icons |
+| [Geist](https://vercel.com/font) | Typography |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project structure
 
 ```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+src/
+├── components/
+│   ├── Header.tsx        # Top bar with name and contact button
+│   ├── Hero.tsx          # Name, photo, intro and social links
+│   ├── About.tsx
+│   ├── Skills.tsx        # Grouped skill tags
+│   ├── Projects.tsx
+│   ├── WorkHistory.tsx
+│   ├── Contact.tsx
+│   ├── Footer.tsx
+│   ├── SocialLinks.tsx   # Shared by Hero and Footer
+│   ├── Reveal.tsx        # Reusable scroll-reveal wrapper
+│   └── BottomBlur.tsx    # Progressive blur overlay
+├── assets/               # Images
+├── App.tsx               # Page layout
+├── main.tsx              # App entry point
+└── index.css             # Tailwind import, design tokens and animations
 ```
+
+## Running locally
+
+You'll need [Node.js](https://nodejs.org) 20 or newer.
+
+```bash
+# Install dependencies
+npm install
+
+# Start the development server (http://localhost:5173)
+npm run dev
+
+# Create a production build in /dist
+npm run build
+
+# Preview the production build locally
+npm run preview
+
+# Check the code for problems
+npm run lint
+```
+
+## Contact
+
+- **Email:** [abouthashir@gmail.com](mailto:abouthashir@gmail.com)
+- **LinkedIn:** [linkedin.com/in/about-hashir](https://www.linkedin.com/in/about-hashir)
+- **GitHub:** [github.com/abouthashir](https://github.com/abouthashir)
