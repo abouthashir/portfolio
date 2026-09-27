@@ -13,7 +13,7 @@ function Hero({ name, intro }: HeroProps) {
                 {name}
             </h1>
 
-            <img
+            <img fetchPriority="high"
                 src={photo}
                 alt={`Portrait of ${name}`}
                 className="size-64 rounded-lg object-cover"
