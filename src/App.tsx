@@ -7,6 +7,7 @@ import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import BottomBlur from "./components/BottomBlur"
+import WorkHistory from "./components/WorkHistory"
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
           <hr className="border-border" />
           <Reveal>
             <Projects />
+          </Reveal>
+          <hr className="border-border" />
+          <Reveal>
+            <WorkHistory />
           </Reveal>
           <hr className="border-border" />
           <Reveal>
