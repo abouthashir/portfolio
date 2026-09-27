@@ -2,7 +2,7 @@
 
 My personal portfolio website, built from scratch with React, TypeScript and Tailwind CSS.
 
-**🔗 Live site:** 
+**🔗 Live site:** [abouthashir.vercel.app](https://abouthashir.vercel.app) 
 
 ---
 
