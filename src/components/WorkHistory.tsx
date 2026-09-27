@@ -10,8 +10,8 @@ const jobs: Job[] = [
     {
         company: 'Zootric LLP',
         period: '2025 — Present',
-        role: ' Freelance Full Stack Developer',
-        summary: 'Developed custom web applications for clients across fintech, healthcare, and e-commerce, working on both frontend and backend systems.',
+        role: 'Freelance Full Stack Developer',
+        summary: 'Developed custom web applications for clients across fintech and e-commerce, working on both frontend and backend systems.',
         highlights: [
             'Collaborated with clients to understand project requirements and deliver tailored web solutions',
             'Built and maintained scalable backend systems using ASP.NET Core and SQL Server, implementing REST APIs for data access and business logic',
