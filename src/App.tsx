@@ -9,7 +9,7 @@ import Footer from "./components/Footer"
 
 function App() {
   return (
-    <div className="mx-auto max-w-290 overflow-clip px-4 pb-16 md:px-16">
+    <div className="overflow-clip px-4 pb-16 md:px-16 lg:px-49">
       <Header name="Hashir A" />
       <main className="flex flex-col gap-24">
         <Hero
