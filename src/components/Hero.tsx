@@ -1,4 +1,4 @@
-import photo from '../assets/me.jpeg'
+import photo from '../assets/me.webp'
 import SocialLinks from './SocialLinks'
 
 type HeroProps = {
